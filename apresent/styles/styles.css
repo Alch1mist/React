@@ -1,0 +1,166 @@
+
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Open Sans", sans-serif;
+}
+
+
+  
+  /* Barra lateral */ 
+  .sidebar {
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh - 48px);
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  } 
+
+  @media (max-width: 767.98px) {
+    .sidebar {
+      top: 0rem;
+    }
+  }
+
+  /* end*/
+
+  /* formataçao links */
+  
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: rgb(235, 233, 233);
+  }
+  
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #c8ff00;
+  }
+
+  ul.separator li{
+      padding: .2em 0;
+      border-bottom: 1px solid #c8ff00;
+  }
+  /* end */
+
+/*
+ * Navbar
+ */
+
+ /* formataçao navs */
+ .navbar-brand {
+     height: 3rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+  }
+  
+  .navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+  }
+  /* end */
+
+  /* perfil home */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+/* cards */
+  .center{
+    height: 70vh; 
+    width: 40vh;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards{
+    padding: 20px;
+    width: 350px;
+    background: rgb(221, 221, 221);
+    box-shadow: 0 0 5px 0px #e2e2e2;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .cards:after,
+  .cards::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform .3s ease-in-out;
+  }
+
+  .cards:before{
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      transform: scaleY(0);
+  }
+
+  .cards:after{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: scaleX(0);
+}
+
+  .cards:hover:before{
+      transform: scaleY(1);
+  }
+  
+  .cards:hover:after{
+    transform: scaleX(1);
+}
+
+  .center h2{
+      margin-top: 15px;
+  }
+
+  .center p  {
+      margin-top: 10px;
+  }
+
+  img{
+     height: 25vh;
+      border-radius: 50%;
+  }
+
+  /* end cards */
+
+  
+
+  /* end */
+
+
+  /* cards contato */
+
+  
+
+  
+
+
+  /* end cards contato */
+
+ 
+  
+  
+  
+  
